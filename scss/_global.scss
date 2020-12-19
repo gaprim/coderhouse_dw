@@ -1,0 +1,66 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: $main_font;
+}
+
+.imagen_hero{
+    background: $imagen_fondo;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    height: $alto*50;
+}
+
+.imagen_hero_contacto{
+    background: $imagen_fondo_contacto;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    height: $alto*50;
+}
+
+.texto_hero{    
+    height: $alto*50;
+}
+
+.logotipo{
+    max-width: 10%;
+}
+
+.tarjeta{
+    width: $rem*18;
+}
+
+
+@for $x from 1 to 7 {
+    h#{$x} {
+        @if $x == 1 {
+            color:$verde;
+            font-weight:bolder;
+        } @else {color:$verde;
+        }
+    }     
+}
+
+@media screen and (max-width: 990px){
+    .logotipo{
+        background: none;
+        height: $alto;
+    }
+    
+    }
+
+@media screen and (max-width: 720px){
+    .imagen_hero{
+        background: none;
+    }
+    .imagen_hero_contacto{
+        background: none;
+    }
+    
+    }
