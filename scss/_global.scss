@@ -6,6 +6,7 @@
 
 html, body {
     font-family: $main_font;
+    margin-top: 45px;
 }
 
 .imagen_hero{
@@ -29,20 +30,36 @@ html, body {
 }
 
 .logotipo{
-    max-width: 10%;
+    max-width: 5%;
 }
 
 .tarjeta{
     width: $rem*18;
 }
+.navbar_estilo{
+    border-bottom: 1px solid $verde;
+    background-color: $blanco;
+}
 
+.footer_estilo{
+    border-top: 1px solid $blanco;
+    background-color: $verde;
+}
+
+a {
+    color:$blanco;
+}
 
 @for $x from 1 to 7 {
     h#{$x} {
         @if $x == 1 {
             color:$verde;
             font-weight:bolder;
+            padding-top: $rem;
+            padding-bottom: $rem;
         } @else {color:$verde;
+            padding-top: $rem;
+            padding-bottom: $rem;
         }
     }     
 }
