@@ -28,9 +28,14 @@ html, body {
 .texto_hero{    
     height: $alto*50;
 }
+// //
+// .logotipo{
+//     max-width: 5%;
+// }
+// //
 
-.logotipo{
-    max-width: 5%;
+.destacado{
+    background-color:$verdeclaro;
 }
 
 .tarjeta{
@@ -65,19 +70,20 @@ a {
 }
 
 @media screen and (max-width: 990px){
-    .logotipo{
-        background: none;
-        height: $alto;
-    }
+    // .logotipo{
+    //     background: none;
+    //     height: $alto;
+    // }
     
     }
 
 @media screen and (max-width: 720px){
     .imagen_hero{
         background: none;
+        
     }
     .imagen_hero_contacto{
         background: none;
     }
-    
+    margin-top: 80px;
     }
