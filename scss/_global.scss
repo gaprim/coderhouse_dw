@@ -6,7 +6,7 @@
 
 html, body {
     font-family: $main_font;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 
 .imagen_hero{
@@ -15,6 +15,10 @@ html, body {
     background-attachment: local;
     background-size: cover;
     height: $alto*50;
+}
+
+.parrafo_hero{
+    width: 50%;
 }
 
 .imagen_hero_contacto{
@@ -69,6 +73,10 @@ a {
     }     
 }
 
+.collapse-social-icons a:hover {
+    color:$verde !important;
+}
+
 @media screen and (max-width: 990px){
     // .logotipo{
     //     background: none;
@@ -78,12 +86,39 @@ a {
     }
 
 @media screen and (max-width: 720px){
+    html, body {
+        margin-top: 30px;
+    }
+    
     .imagen_hero{
         background: none;
+        
         
     }
     .imagen_hero_contacto{
         background: none;
+        margin-top: 80px;
+        
     }
-    margin-top: 80px;
+    
+    .parrafo_hero{
+        width: 100%;
     }
+}
+
+@media screen and (max-width: 576px){
+    html, body {
+        margin-top: 30px;
+    }
+    
+    
+    .imagen_hero_contacto{
+        background: none;
+        margin-top: 80px;
+        
+    }
+    
+    .parrafo_hero{
+        width: 100%;
+    }
+}
