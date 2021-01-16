@@ -42,6 +42,10 @@ html, body {
     background-color:$verdeclaro;
 }
 
+.destacado_oscuro{
+    background-color:$verde;
+}
+
 .tarjeta{
     width: $rem*18;
 }
@@ -71,6 +75,10 @@ a {
             padding-bottom: $rem;
         }
     }     
+}
+
+.textoblanco{
+    color:$blanco;
 }
 
 .collapse-social-icons a:hover {
