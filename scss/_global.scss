@@ -81,15 +81,23 @@ a {
     color:$blanco;
 }
 
+
+.collapse a:hover{
+    color:$verde !important;
+}
+
 .collapse-social-icons a:hover {
     color:$verde !important;
 }
 
 @media screen and (max-width: 990px){
-    // .logotipo{
-    //     background: none;
-    //     height: $alto;
-    // }
+    .imagen_hero{
+        background: $imagen_fondo_small;
+        background-position: center;
+        background-attachment: local;
+        background-size: cover;
+        height: $alto*50;
+    }
     
     }
 
@@ -100,8 +108,8 @@ a {
     
     .imagen_hero{
         background: none;
-        
-        
+        height: $alto*52;
+                
     }
     .imagen_hero_contacto{
         background: none;
@@ -119,6 +127,10 @@ a {
         margin-top: 30px;
     }
     
+    .imagen_hero{
+        background: none;
+        height: $alto*52;
+    }
     
     .imagen_hero_contacto{
         background: none;
